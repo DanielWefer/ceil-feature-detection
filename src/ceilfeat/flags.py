@@ -7,7 +7,7 @@ from skimage.measure import label, regionprops
 from skimage.morphology import remove_small_objects
 
 from .precip import get_precip_flags
-from .clouds import get_clouds, get_cloud_flags  # get_cloud_flags defined below; import get_clouds
+from .clouds import get_clouds
 # Note: get_cloud_flags is our own function; `get_clouds` comes from clouds.py
 
 __all__ = ["get_cloud_flags", "get_fog_flags", "get_clear_air_flag", "get_flags"]
