@@ -116,6 +116,6 @@ def create_file(
     # if user passed a directory, build a default filename
     if out.is_dir():
         date = ds['time'].idxmin(dim='time').dt.strftime("%Y%m%d").values
-        out = out / f"cl61_edges_{date}.nc"
+        out = out / f"cl61_features_{date}.nc"
 
     return write_netcdf(ds, out, overwrite=overwrite)
