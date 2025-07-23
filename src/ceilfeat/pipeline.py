@@ -66,11 +66,10 @@ def process_one(input_path: Path, output_dest: Path, *, max_height: int = 5000, 
 
     # Variable corrections (as in your notebook loop)
     variables = ["beta_att", "p_pol", "x_pol", "linear_depol_ratio"]
-    ds["linear_depol_ratio_uncorrected"] = ds["x_pol"] / (ds["x_pol"] + ds["p_pol"])
     for var in variables:
         if var != "linear_depol_ratio":
             ds = act.corrections.correct_ceil(ds, var_name=var)
-    ds["linear_depol_ratio_manual"] = ds["x_pol"] / (ds["x_pol"] + ds["p_pol"])
+    ds["linear_depol_ratio"] = ds["x_pol"] / (ds["x_pol"] + ds["p_pol"])
 
     # Save & drop overlap_function until the end
     overlap_function = ds["overlap_function"] if "overlap_function" in ds else None
