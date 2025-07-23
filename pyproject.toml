@@ -40,6 +40,9 @@ ceilfeat-run = "ceilfeat.pipeline:main"
 [tool.hatch.build.targets.wheel]
 packages = ["src/ceilfeat"]
 
+[tool.hatch.build.targets.editable]
+packages = ["src/ceilfeat"]
+
 [tool.hatch.build.targets.sdist]
 include = [
   "src/ceilfeat",
