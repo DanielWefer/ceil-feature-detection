@@ -9,7 +9,7 @@ description = "Ceilometer feature detection (clouds, precip, fog, layers) from N
 readme = "README.md"
 requires-python = ">=3.9"
 license = { file = "LICENSE" }
-authors = [{ name = "Daniel Wefer", email = "dweef1@.com" }]
+authors = [{ name = "Daniel Wefer", email = "dweef1@gmail.com" }]
 dependencies = [
   "numpy",
   "pandas",
