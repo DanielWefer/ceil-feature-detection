@@ -8,7 +8,6 @@ from skimage.morphology import remove_small_objects
 
 __all__ = ["get_precip", "get_precip_flags"]
 
-
 def get_precip(backscatter, ranges, times, min_size=500, cloud_threshold=-5.5,
                surface_tol=10, min_extent=500, time_tol='10min'):
     """
