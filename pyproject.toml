@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ceilfeat"                    
-version = "0.1.0"                    
+version = "0.1.1"                    
 description = "Ceilometer feature detection (clouds, precip, fog, layers) from NetCDF."
 readme = "README.md"
 requires-python = ">=3.9"
